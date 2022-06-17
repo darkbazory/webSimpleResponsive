@@ -1,0 +1,790 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url("../fonts/static/Nunito-Italic.ttf");
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url("../fonts/static/Dosis-Medium.ttf");
+}
+
+/* Elementos comunues*/
+body{
+    font-size: 62.5%;
+}
+h2 {
+    font-family: 'Nunito';
+    font-size: 600%;
+    padding: 30px 0;
+}
+
+h3 {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Dosis';
+    font-size: 200%;
+    margin-top: 20px;
+}
+
+nav {
+    position: sticky;
+}
+
+.oculto {
+    display: none;
+}
+
+.btnOculto {
+    display: none;
+}
+
+.gray {
+    color: #5d5d5d;
+}
+
+.violet {
+    color: blueviolet;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.aling-center {
+    align-items: center;
+}
+
+.div-span {
+    display: table;
+}
+
+.span-table {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pl-1 {
+    padding-left: 10px;
+}
+
+.pl-3 {
+    padding-left: 30px;
+}
+
+.mg-0 {
+    margin: 30px;
+}
+
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+
+#grande {
+    display: none;
+    position: fixed;
+    z-index: 1000000000000000000000000000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#grande img {
+    width: 40%;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+
+}
+
+#grande #fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.99%;
+    height: 100vh;
+    position: absolute;
+}
+
+
+
+/*   Header   */
+.barras {
+    color: white;
+    font-size: 50px;
+    padding-right: 65px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100000;
+}
+
+header.sticky .barras {
+    color: black;
+}
+
+header.sticky {
+    padding: 5px 0px;
+    background: whitesmoke;
+}
+
+header.sticky ul li a {
+    color: black;
+}
+
+header.sticky ul li a:hover {
+    font-weight: 900;
+    border-bottom: 5px solid blueviolet;
+}
+
+header.sticky nav ul li {
+    padding: 0px 5px;
+    border-right: 2px solid;
+    color: #000;
+}
+
+header.sticky nav ul li:last-child {
+    border-right: none
+}
+
+header.logo {
+    position: relative;
+    font-weight: 700;
+    color: transparent;
+    text-decoration: none;
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header a img {
+    text-align: center;
+    width: 150px;
+    margin-left: 100px;
+    padding: 10px;
+
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    font-family: 'Nunito';
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 200%;
+}
+
+.container-flex {
+    margin: 0px auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+nav ul li {
+    padding: 0px 5px;
+    border-right: 2px solid;
+    color: white;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a:hover {
+    font-weight: 900;
+    border-bottom: 5px solid white;
+}
+
+
+/* Banner */
+.container-flex {
+    max-width: 1200px;
+}
+
+.banner {
+    background-color: blueviolet;
+    border-bottom: 15px solid rgb(109, 3, 208);
+}
+
+.imgBanner {
+    width: 500px;
+    margin: 100px 50px 20px;
+}
+
+.intro {
+    color: white;
+}
+
+.intro span {
+    font-size: 200%;
+}
+
+.intro :first-child {
+    text-align: center;
+}
+
+.intro p {
+    font-size: 350%;
+    padding: 20px 50px;
+}
+
+.intro strong {
+    font-style: italic;
+    font-weight: 900;
+}
+
+/*  About Us*/
+.sobreNosotros {
+    border-bottom: 15px solid #c4c4c4;
+}
+
+.imgUs {
+    width: 400px;
+    margin: 50px 100px;
+}
+
+/* por qué BiQes */
+.biqes {
+    padding: 20px 60px 80px;
+    border-bottom: 15px solid blueviolet;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+
+}
+
+.bd-purple {
+    border-bottom: 10px solid blueviolet;
+}
+
+.bd-black {
+    border-bottom: 10px solid black;
+}
+
+.bd-gray {
+    border-bottom: 10px solid gray;
+}
+
+.card {
+    background-color: #c4c4c4;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 250%;
+    padding-top: 50px;
+    min-height: 80px;
+}
+
+.icono {
+    font-size: 500%;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: white;
+    color: blueviolet;
+}
+
+.card p {
+    text-align: start;
+    padding-top: 20px;
+    font-size: 200%;
+    margin-top: 0px;
+}
+
+.card p::first-letter {
+    padding-left: 35px;
+}
+
+.card ul {
+    padding-top: 20px;
+}
+
+.card li {
+    text-align: start;
+    list-style-type: disc;
+    font-size: 200%;
+    padding-top: 5px;
+}
+
+/*  Nuestros empleados  */
+.card-empleados {
+    margin: 0px 10px 20px;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background: blueviolet;
+    border-radius: 1000px;
+}
+
+.puesto {
+    color: white;
+    font-size: 200%;
+    padding-left: 5px;
+}
+
+.empleados {
+    border-top: 40px solid rgb(183, 140, 223);
+    border-bottom: 15px solid blueviolet;
+    padding-bottom: 80px;
+}
+
+.empleados h2 {
+    margin-top: 50px;
+}
+
+.empleados p {
+    text-align: center;
+}
+
+.bd-especial1 {
+    padding-left: 50px;
+    border-left: 200px solid rgb(183, 140, 223);
+}
+
+.bd-especial2 {
+    margin-top: 50px;
+    padding-right: 50px;
+    border-right: 200px solid rgb(183, 140, 223);
+}
+
+.grid-empleados {
+    margin: 50px 60px 80px;
+    background-color: #c4c4c4;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.imgCirculo {
+    margin: 30px 0px;
+    width: 140px;
+    border-radius: 150px;
+    border: 10px solid white;
+}
+
+.imgCirculo:hover {
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.btnDetalle {
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 180%;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btnDetalle:hover {
+    cursor: pointer;
+}
+
+.altura {
+    min-height: 100px;
+}
+
+.size {
+    font-size: 250%;
+}
+
+/* Noticias y eventos */
+.noticias {
+    border-top: 40px solid rgb(183, 140, 223);
+    border-bottom: 20px solid blueviolet;
+}
+
+.cuadrado {
+    width: 25px;
+    height: 25px;
+    background: blueviolet;
+}
+
+.franja {
+    width: 100%;
+    height: 30px;
+    background: #dadada;
+    margin: 20px 0px;
+}
+
+.mg-0 article {
+    margin: 30px 0px;
+    background: #dadada;
+    display: flex;
+}
+
+.mg-0 article div p:first-of-type {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.mg-0 article div p:last-of-type {
+    margin-top: 10px;
+    font-size: 180%;
+}
+
+.mg-0 article div p span {
+    padding: 0px 15px;
+    border-left: 1px solid black;
+    color: blueviolet;
+}
+
+.mg-0 article div p span:last-of-type {
+    color: black;
+    font-weight: 800;
+
+}
+
+.mg-0 article div p span:first-of-type {
+    border: none;
+}
+
+.mg-0 article div img {
+    width: 150px;
+    height: 150px;
+    padding-right: 30px;
+}
+
+.mg-0 h4 {
+    font-size: 250%;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+#eventos span.icon-clock::before {
+    color: black;
+}
+
+#eventos span.icon-eye::before {
+    color: black;
+}
+
+#eventos article {
+    background-color: rgb(240, 225, 255);
+}
+
+#eventos .franja {
+    background-color: rgb(240, 225, 255);
+}
+
+span.icon-circle-up::before {
+    font-size: 300%;
+    color: #c4c4c4;
+}
+
+
+.centrado a {
+    text-decoration: none;
+}
+
+.titulo img:hover {
+    cursor: pointer;
+}
+.mg-0 article div p:last-of-type {
+    margin-bottom: 10px;
+}
+
+/*--------------- Footer --------------------*/
+footer {
+    margin-top: 10px;
+    background-color: blueviolet;
+}
+
+.footer {
+    padding: 30px 0px;
+}
+
+.footer li {
+    padding: 0 20px;
+    border-right: 2px solid white;
+}
+
+.footer li:last-child {
+    border-right: none;
+}
+
+.footer li a {
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+}
+
+.footer li a:hover {
+    color: black;
+}
+
+.contacto {
+    text-align: center;
+    color: white;
+}
+
+.contacto p {
+    font-size: 160%;
+    padding: 5px;
+    margin: 0;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*          */
+@media only screen and (max-width: 1185px) {
+    header {
+        display: block;
+    }
+
+    nav ul {
+        padding: 30px 0px;
+    }
+
+    .intro {
+        margin-top: 150px;
+    }
+
+    .imgBanner {
+        margin: 200px 50px 20px;
+    }
+
+   
+
+    .mg-0 article div img {
+        padding: 25px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1115px) {
+    .bd-especial1 {
+        border: none;
+    }
+
+    .bd-especial2 {
+        border: none;
+    }
+
+    .grid-empleados {
+        grid-template-columns: auto auto;
+    }
+
+    .altura {
+        padding: 0px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1015px) {
+       .mg-0 article div p:last-of-type span {
+        display: block;
+        border: none;
+        padding: 5px 10px;
+
+    }
+
+}
+
+@media only screen and (max-width: 1055px) {
+    .container-flex {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .container-flex p {
+        padding: 20px 60px;
+        margin-top: 0;
+    }
+
+    .intro p {
+        padding: 20px 150px;
+    }
+
+    #imgBanner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgBanner {
+        margin: 0;
+    }
+
+    .imgUs {
+        margin: 50px auto;
+
+    }
+
+    .biqes .grid {
+        grid-template-columns: auto auto;
+    }
+    .mg-0 article div p span {
+        border-left:none;
+        
+    }
+}
+/*   CORTE MENU NAVEGACIÓN   */
+@media only screen and (max-width: 920px) {
+    nav {
+        text-align: right;
+        display: none;
+        padding-right: 50px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li,
+    header.sticky nav ul li {
+        border: none;
+        padding: 12px 0px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btnOculto {
+        display: block;
+    }
+}
+
+/*------  VERSIÓN TABLET  ------*/
+@media only screen and (max-width: 885px) {
+
+    .imgBanner {
+        width: 400px;
+    }
+
+    .imgUs {
+        width: 300px;
+    }
+
+    .btnDetalle {
+        font-size: 160%;
+    }
+
+    .mg-0 article {
+        display: block;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .mg-0 h4 {
+        text-align: center;
+    }
+
+    .mg-0 article div p:first-of-type {
+        margin: 10px 10px;
+    }
+
+    .mg-0 article div p:last-of-type {
+        padding: 10px 0;
+    }
+    .mg-0 article div p:last-of-type {
+        display: flex;
+        text-align: center;
+    }
+ 
+    .intro p {
+        font-size: 300%;
+    }
+
+}
+
+/*------  VERSIÓN Móvil  ------*/
+@media only screen and (max-width: 650px) {
+    .intro p {
+        padding: 20px 60px;
+    }
+    .card h3 {
+        min-height: 60px;
+    }
+ 
+    .card ul {
+        padding-top: 0px;
+    }
+    .biqes .grid {
+        grid-template-columns: auto;
+    }
+
+    .bd-especial1{
+        border-left: none;
+        padding: 0;
+     }
+     .bd-especial2{
+        border-right: none;
+        padding: 0;
+     }
+
+    .grid-empleados {
+        grid-template-columns: auto;
+    }
+
+    .noticias #noticias{
+        display: block;
+    }
+
+    .mg-0 article div p:first-of-type {
+        margin: 10px 50px;
+    }
+    .mg-0 article div p:last-of-type {
+        margin: 10px 30px;
+    }
+
+    
+}
